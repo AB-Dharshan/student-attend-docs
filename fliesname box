@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf2f8;
+            margin: 0;
+            padding: 30px 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #cccccc;
+        }
+        h1 { color: #2457a7; text-align: center; }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .card {
+            flex: 1 1 180px;
+            padding: 20px;
+            background: #f4f7fb;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h2 { color: #2457a7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Attendance Management System</h1>
+        <p>Welcome! Manage student attendance easily.</p>
+
+        <h2>Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Student Registration</h3>
+                <p>Add student details.</p>
+            </div>
+            <div class="card">
+                <h3>Mark Attendance</h3>
+                <p>Record daily attendance.</p>
+            </div>
+            <div class="card">
+                <h3>View Attendance</h3>
+                <p>Check attendance records.</p>
+            </div>
+            <div class="card">
+                <h3>Reports</h3>
+                <p>View attendance summaries.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

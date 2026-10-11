@@ -1,30 +1,54 @@
  Student Attendance Management System
 
-## Introduction
-The Student Attendance Management System is a web-based application used to manage student attendance.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Student Attendance System</h1>
+        <p>Track attendance easily!</p>
+    </header>
 
-## Features
-- Student registration
-- Mark attendance
-- View attendance
-- Generate attendance reports
+    <section class="attendance">
+        <h2>Mark Attendance</h2>
+        <form id="attendanceForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="Present">Present ✅</option>
+                <option value="Absent">Absent ❌</option>
+            </select>
+            
+            <button type="submit">Add Record</button>
+        </form>
+    </section>
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
+    <section class="records">
+        <h2>Attendance Records</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will appear here -->
+            </tbody>
+        </table>
+    </section>
 
-## Installation
-1. Download the project.
-2. Open the project folder.
-3. Open index.html in a browser.
+    <footer>
+        <p>© 2026 Dharshan | Powered by GitHub Pages</p>
+    </footer>
 
-## Usage
-1. Login to the system.
-2. Select the class.
-3. Mark attendance.
-4. Generate the report.
+    <script src="script.js"></script>
+</body>
+</html>
 
-## Future Enhancements
-- Mobile application
-- Cloud database
